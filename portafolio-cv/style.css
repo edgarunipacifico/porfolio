@@ -558,7 +558,7 @@ html {
     .article img{
       width: 1000px;
     }
-    /*.logo{
+    .logo{
         width:2rem;
         height: 2rem;
         
@@ -566,7 +566,7 @@ html {
         background-image: url(./svg/logo_cpt.svg);
         background-size: contain;
         background-repeat: no-repeat;
-    }*/
+    }
     .porfolio-card{
       position: relative;
       width: 100%;
