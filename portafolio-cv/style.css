@@ -38,7 +38,7 @@ html {
     font-family: var(--font);
     font-size: 16px;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+  
   }
   
   *,
@@ -366,12 +366,11 @@ html {
         }
         
         .menu{
-            flex-direction: row;
-            position: static;
-            opacity: 1;
-            pointer-events: auto;
-            width: auto;
-            margin-bottom: 1rem;
+          position: static;
+          width: auto;
+          flex-direction: row;
+          opacity: 1;
+          pointer-events: auto;
         }
         .menu a{
           padding: 0 1rem;
@@ -586,7 +585,7 @@ html {
       width: 1000px;
     }
     .logo{
-        width:10rem;
+        width:20rem;
         height: 2rem;
         
      
@@ -748,7 +747,7 @@ html {
             position: sticky;
             top: 0;
             padding: 0.5rem;
-            height: calc(var(--header-height) - 0.5rem);
+            height: calc(var( --header-height ) - 0.5rem);
 
         }
         .portfolio > .container{
