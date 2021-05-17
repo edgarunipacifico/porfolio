@@ -1,10 +1,29 @@
+
+
+
+/**************btn-up*************/
+buttonUp = document.querySelector(".button-up");
+
+window.onscroll = ()=>{
+
+    let scroll = document.documentElement.scrollTop;
+      console.log(scroll)
+   if (scroll > 500){
+        buttonUp.style.transform = "scale(1)";
+   }else if(scroll < 500){
+        buttonUp.style.transform = "scale(0)";
+    }
+
+}
+
+
 // Scroll up
 
-document.getElementById("button-up").addEventListener("click", scrollUp);
 
-function scrollUp(){
+document.querySelector(".button-up").addEventListener("click", scrollUp);
+const scrollUp=()=>{
 
-    var currentScroll = document.documentElement.scrollTop;
+    let currentScroll = document.documentElement.scrollTop;
 
     if (currentScroll > 0){
         window.requestAnimationFrame(scrollUp);
@@ -13,21 +32,19 @@ function scrollUp(){
 }
 
 
+
 ///
 
-buttonUp = document.getElementById("button-up");
 
-window.onscroll = function(){
 
-    var scroll = document.documentElement.scrollTop;
 
-    if (scroll > 500){
-        buttonUp.style.transform = "scale(1)";
-    }else if(scroll < 500){
-        buttonUp.style.transform = "scale(0)";
-    }
 
-}
+
+
+
+
+/*********************************************** */ 
+
 
 
 
