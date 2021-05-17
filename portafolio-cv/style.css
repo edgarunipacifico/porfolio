@@ -112,7 +112,7 @@ html {
       display: flex;
       justify-content: center;
       align-items: center;
-      color:var(--white-color);
+      color:white;
       border-radius: 50%;
       font-size: 20px;
       position: fixed;
