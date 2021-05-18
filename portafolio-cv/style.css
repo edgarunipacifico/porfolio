@@ -103,31 +103,7 @@ html {
 
 /***** components*****************/
 
-     /*****btn-up******/
 
-    .button-up{
-      width: 60px;
-      height: 60px;
-      background: var(--first-color);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color:white;
-      border-radius: 50%;
-      font-size: 20px;
-      position: fixed;
-      bottom: 5rem;
-      right: 50px;
-      cursor: pointer;
-      border: 4px solid transparent;
-      transition: all 300ms ease;
-      transform: scale(0);
-  }
-  
-  .button-up:hover{
-      transform: scale(1.1);
-      border-color: rgba(0,0,0,0.1);
-  }
     
     /****corusel****/
     
@@ -454,6 +430,7 @@ html {
       width: 100px;
       height: 100px;
     }
+  
     .text-firts-color{
       color:var(--first-color)
     }
@@ -519,7 +496,35 @@ html {
 
     
       @media screen and (min-width: 1024px){
-        
+             /*****btn-up******/
+
+    .button-up{
+      width: 60px;
+      height: 60px;
+      background: var(--first-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:white;
+      border-radius: 50%;
+      font-size: 20px;
+      position: fixed;
+      bottom: 5rem;
+      right: 50px;
+      cursor: pointer;
+      border: 4px solid transparent;
+      transition: all 300ms ease;
+      transform: scale(0);
+  }
+
+  .button-up a{
+    color: var(--white-color);
+  }
+  
+  .button-up:hover{
+      transform: scale(1.1);
+      border-color: rgba(0,0,0,0.1);
+  }
         .full-lg-screen{
           width:100%;
           min-height: 100vh;
