@@ -20,9 +20,9 @@ window.onscroll = ()=>{
 // Scroll up
 
 
-document.querySelector(".button-up").addEventListener("click", scrollUp);
-const scrollUp=()=>{
 
+const scrollUp=()=>{
+    document.querySelector(".button-up").addEventListener("click", scrollUp);
     let currentScroll = document.documentElement.scrollTop;
 
     if (currentScroll > 0){
