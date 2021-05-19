@@ -32,27 +32,18 @@ const scrollUp=()=>{
 }
 
 
+/*************btn-hamburguer******/
 
-///
-
-
-
-
-
-
-
-
-
-/*********************************************** */ 
-
-
-
+const $bottom = document.querySelector(".hamburger button");
+      $bottom.addEventListener("click", (e) => {
+      $bottom.classList.toggle("open");
+      });
 
 
 
 /* ********** Menu ********** */
 ((d) => {
-  const $btnMenu = d.querySelector(".menu-btn"),
+  const $btnMenu = d.querySelector(".hamburger button"),
     $menu = d.querySelector(".menu");
 
   $btnMenu.addEventListener("click", (e) => {
