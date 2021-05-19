@@ -58,6 +58,7 @@ const $bottom = document.querySelector(".hamburger button");
     $btnMenu.firstElementChild.classList.remove("none");
     $btnMenu.lastElementChild.classList.add("none");
     $menu.classList.remove("is-active");
+    $bottom.classList.toggle("open");
   });
 })(document);
 /* ********** ContactForm ********** */
