@@ -852,13 +852,16 @@ html {
       .footer {
         margin-bottom: 0;
       }
-        .header{
+       .header{
             position: sticky;
             top: 0;
             padding: 0.5rem;
             height: calc(var( --header-height ) - 0.5rem);
 
         }
+      .hamburger button{
+        display: none;
+      }
         .portfolio > .container{
           grid-template-columns: repeat(3,1fr);
         }
