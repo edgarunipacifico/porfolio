@@ -37,13 +37,13 @@
              </a> 
                 
              </div>
-             <button class="menu-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"/>
-                </svg>
-                    <svg class ="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
-                    </svg>
-                    
-             </button>
+              <div class="hamburger">
+                <button>
+                  <span class="top-line"></span>
+                  <span class="middle-line"></span>
+                  <span class="bottom-line"></span>
+                </button>
+            </div>
              <nav class="menu">
                 <a href="#inicio">Inicio</a>
                 <a href="#acerca">Acerca</a>
@@ -55,7 +55,7 @@
         </section>
     </header>
     <section id="inicio" class="home">
-        <article class="hiro-image" style="--hiro-image:url('img/codigo_edg_pie.png' );--hiro-image-attachment:fixed;" >
+        <article class="hiro-image" style="--hiro-image:url('img/codigo_edg_pie.png');--hiro-image-attachment:fixed;" >
             <aside class="hiro-image-opacity" style="--opacity-color:var(--black-alpha-color)" >
                 <div class="hiro-image-content">
                    <h2 class=hiro-image-title  style="--hiro-image-text-color:var(--white-color)">Full Stack Web Developer</h2> 
@@ -162,9 +162,10 @@
             <img src="./img/portfolio-1.jpg" alt="">
             <aside class="porfolio-card-info">
                 <div>
-                    <h3>Proyecto uno</h3>
+                    <h3>Music+</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ea. Odit, recusandae optio? Neque vel quaerat atque rerum illo accusantium iste doloribus eius autem. Voluptates est ipsum saepe fuga voluptate.
+                        Landing page, music+  escucha las canciones más buscada en google tarareando , conoce cuales son los artistas más googleados y los videos más
+                        vistoss en youtube.
 
                     </p>
                 </div>
@@ -380,7 +381,7 @@
         </div>
     </article>
     <section id="testimonio" class="testimonials">
-        <article class="hiro-image" style="--hiro-image:url('/img/hero-image-customers.jpg' );--hiro-image-attachment: scroll;" >
+        <article class="hiro-image" style="--hiro-image:url('img/hero-image-customers.jpg');--hiro-image-attachment: scroll;" >
             <aside class="hiro-image-opacity" style="--opacity-color:var(--white-alpha-color)" >
                 <div class="hiro-image-content">
                   <div class="container">
@@ -549,7 +550,10 @@
 
        <!--Boton de ir hacia arriba-->
     <div class="button-up" >
-        <i class="fas fa-chevron-up"></i>
+        
+       <a href="#inicio">
+          <i class="fas fa-chevron-up"></i>
+        </a>
     </div> 
 
     <footer class="footer">

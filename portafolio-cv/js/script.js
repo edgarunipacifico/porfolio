@@ -20,9 +20,9 @@ window.onscroll = ()=>{
 // Scroll up
 
 
-document.querySelector(".button-up").addEventListener("click", scrollUp);
-const scrollUp=()=>{
 
+const scrollUp=()=>{
+    document.querySelector(".button-up").addEventListener("click", scrollUp);
     let currentScroll = document.documentElement.scrollTop;
 
     if (currentScroll > 0){
@@ -32,27 +32,18 @@ const scrollUp=()=>{
 }
 
 
+/*************btn-hamburguer******/
 
-///
-
-
-
-
-
-
-
-
-
-/*********************************************** */ 
-
-
-
+const $bottom = document.querySelector(".hamburger button");
+      $bottom.addEventListener("click", (e) => {
+      $bottom.classList.toggle("open");
+      });
 
 
 
 /* ********** Menu ********** */
 ((d) => {
-  const $btnMenu = d.querySelector(".menu-btn"),
+  const $btnMenu = d.querySelector(".hamburger button"),
     $menu = d.querySelector(".menu");
 
   $btnMenu.addEventListener("click", (e) => {
@@ -67,6 +58,7 @@ const scrollUp=()=>{
     $btnMenu.firstElementChild.classList.remove("none");
     $btnMenu.lastElementChild.classList.add("none");
     $menu.classList.remove("is-active");
+    $bottom.classList.toggle("open");
   });
 })(document);
 /* ********** ContactForm ********** */
